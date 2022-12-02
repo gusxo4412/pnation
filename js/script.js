@@ -40,7 +40,8 @@ $(document).ready(function(){
         effect: 'fade',
         on: {
             slideChangeTransitionEnd: function (){
-                video.get(0).pause();
+                $('iframe').removeAttr('src');
+                $('iframe').addAttr('src');
             }
         }
     });
