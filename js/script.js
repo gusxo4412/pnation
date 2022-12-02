@@ -38,6 +38,11 @@ $(document).ready(function(){
         },
         simulateTouch: false,
         effect: 'fade',
+        on: {
+            slideChangeTransitionEnd: function (){
+                video.get(0).pause();
+            }
+        }
     });
     // youtube
 });
